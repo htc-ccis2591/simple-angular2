@@ -12,7 +12,7 @@ import { HeroDetailComponent } from './hero-detail.component';
     <h1>{{title}}</h1>
     <nav>
       <a [routerLink]="['Dashboard']">Dashboard</a>
-      <a [routerLink]="['Heroes']">Heroes</a>
+      <a [routerLink]="['Heroes']">Players</a>
     </nav>
     <router-outlet></router-outlet>
   `,
@@ -42,5 +42,5 @@ import { HeroDetailComponent } from './hero-detail.component';
   }
 ])
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'A Few of Wrigleys Finest';
 }

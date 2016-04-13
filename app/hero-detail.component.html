@@ -1,10 +1,19 @@
 <div *ngIf="hero">
-  <h2>{{hero.name}} details!</h2>
+  <h2>{{hero.name}} Stats!</h2>
   <div>
-    <label>id: </label>{{hero.id}}</div>
+    <label>Number: </label>{{hero.id}}
+    </div>
   <div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
+   <label>Position: </label>{{hero.pos}}
+  </div>
+  <div>
+   <label>Homeruns: </label>{{hero.HR}}
+  </div>
+      <div>
+   <label>Runs Batted In: </label>{{hero.RBI}}
+  </div>
+      <div>
+   <label>Batting Average: </label>{{hero.AVG}}
   </div>
   <button (click)="goBack()">Back</button>
 </div>
