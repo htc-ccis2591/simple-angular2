@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} Stats!</h2>
+  <div>
+    <label>Number: </label>{{hero.id}}
+    </div>
+  <div>
+   <label>Position: </label>{{hero.pos}}
+  </div>
+  <div>
+   <label>Homeruns: </label>{{hero.HR}}
+  </div>
+      <div>
+   <label>Runs Batted In: </label>{{hero.RBI}}
+  </div>
+      <div>
+   <label>Batting Average: </label>{{hero.AVG}}
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
