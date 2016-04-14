@@ -1,0 +1,14 @@
+<h2>My Discs</h2>
+<ul class="discs">
+  <li *ngFor="#disc of discs"
+    [class.selected]="disc === selectedDisc"
+    (click)="onSelect(disc)">
+    <span class="badge">{{disc.id}}</span> {{disc.manufacturer}}{{disc.name}} 
+  </li>
+</ul>
+<div *ngIf="selectedDisc">
+  <h2>
+   You have selected the {{selectedDisc.name | uppercase}} from {{selectedDisc.manufacturer}}
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
