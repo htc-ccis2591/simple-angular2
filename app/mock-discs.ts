@@ -1,14 +1,14 @@
 import { Disc } from './disc';
 
 export var DISCS: Disc[] = [
-	{"id": 101, "name": "Innova Leopard", "type":"Fairway Driver" },
-	{"id": 102, "name": "Discraft Buzzz", "type": "Midrange"} 
-	{"id": 103, "name": "Latitude 64 Bolt", "type": "Distance Driver"},
-	{"id": 104, "name": "Prodigy A1", "type": "Approach"},
-	{"id": 105, "name": "Discraft Crank SS", "type": "Distance Driver"},
-	{"id": 106, "name": "Discraft Nuke" "type": "Distance Driver"},
-	{"id": 107, "name": "Innova Aviar", "type": "Putter"},
-	{"id": 108, "name": "Innova Roc", "type": "Midrange"},
-	{"id": 109, "name": "Gateway Wizard", "type": "Putter"},
-	{"id": 110, "name": "Legacy Rival", "type": "Fairway Driver"}
+	{"id": 101, "name": "Leopard", "type": "Fairway Driver", "manufacturer": "Innova"},
+	{"id": 102, "name": "Buzzz", "type": "Midrange", "manufacturer": "Discraft"},
+	{"id": 103, "name": "Bolt", "type": "Distance Driver", "manufacturer": "Latitude 64 Bolt"},
+	{"id": 104, "name": "A1", "type": "Approach", "manufacturer": "Prodigy"},
+	{"id": 105, "name": "Crank SS", "type": "Distance Driver", "manufacturer": "Discraft "},
+	{"id": 106, "name": "Nuke", "type": "Distance Driver", "manufacturer": "Discraft"},
+	{"id": 107, "name": "Aviar", "type": "Putter", "manufacturer": "Innova"},
+	{"id": 108, "name": "Roc", "type": "Midrange", "manufacturer": "Innova"},
+	{"id": 109, "name": "Wizard", "type": "Putter", "manufacturer": "Gateway"},
+	{"id": 110, "name": "Rival", "type": "Fairway Driver", "manufacturer": "Legacy"}
 ];

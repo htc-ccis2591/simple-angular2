@@ -3,12 +3,12 @@
   <li *ngFor="#disc of discs"
     [class.selected]="disc === selectedDisc"
     (click)="onSelect(disc)">
-    <span class="badge">{{disc.id}}</span> {{disc.name}} {{disc.type}}
+    <span class="badge">{{disc.id}}</span> {{disc.manufacturer}}{{disc.name}} 
   </li>
 </ul>
 <div *ngIf="selectedDisc">
   <h2>
-    {{selectedDisc.name | uppercase}} is the disc you have selected.
+   You have selected the {{selectedDisc.name | uppercase}} from {{selectedDisc.manufacturer}}
   </h2>
   <button (click)="gotoDetail()">View Details</button>
 </div>

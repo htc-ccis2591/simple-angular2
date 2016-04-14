@@ -1,15 +1,21 @@
 <div *ngIf="disc">
-  <h2>{{disc.name}} details!</h2>
-  <div>
-    <label>id: </label>{{disc.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="disc.name" placeholder="name" />
-  </div>
+    <h2>{{disc.name}} details!</h2>
     <div>
-        <label>type: </label> 
-        <input [(ngModel)]="disc.type" placeholder="type" />
-      
+        <label>id: </label>{{disc.id}}
     </div>
-  <button (click)="goBack()">Back</button>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="disc.name" placeholder="name" />
+    </div>
+    <div>
+        <label>type: </label>
+        <input [(ngModel)]="disc.type" placeholder="type" />
+
+    </div>
+    <div>
+        <label>manufacturer: </label>
+        <input [(ngModel)]="disc.manufacturer" placeholder="manufacturer" />
+
+    </div>
+    <button (click)="goBack()">Back</button>
 </div>
