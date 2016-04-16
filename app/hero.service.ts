@@ -6,7 +6,7 @@ export class HeroService {
   getHeroes() {
     return Promise.resolve(HEROES);
   }
-  // See the "Take it slow" appendix
+  // Making the heroes return slowly to simulate a network connnection
   getHeroesSlowly() {
     return new Promise<Hero[]>(resolve =>
       setTimeout(()=>resolve(HEROES), 2000) // 2 seconds
